@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Advanced Menu System",
+	"Description": "The Advanced Menu System plugin 🌐 is designed specifically for Unreal Engine 5, offering a game-ready solution for creating game menus. Developed entirely in C++. Plugin can be used with both C++ and Blueprints.",
+	"Category": "UI",
+	"CreatedBy": "Head Mounted Software",
+	"CreatedByURL": "https://www.headmountedsoftware.com",
+	"DocsURL": "https://hhiddenh.github.io/AdvancedMenuSystemWeb/annotated.html",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ad588d04aeed484fb025f2798253d900",
+	"SupportURL": "https://discord.gg/MXVWYKQ7Mg",
+	"EngineVersion": "5.6.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "AdvancedMenuSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		}
+	]
+}
