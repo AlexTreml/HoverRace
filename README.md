@@ -7,7 +7,7 @@ Anti-gravity racing game built in Unreal Engine 5.6
 | Document | Location |
 |----------|----------|
 | **Development Commentary** | Submitted as HoverRace.html and available via GitHub Pages on link provided in submission)|
-| **Playable Windows Build** | [[Releases page](../../releases)](https://github.com/AlexTreml/HoverRace/releases/tag/1.3) |
+| **Playable Windows Build** | (https://github.com/AlexTreml/HoverRace/releases/tag/1.3) |
 | **Video Talk** | You Tube Link available in Development commentary submission |
 | **Unreal Files**| Available in this repository.
 
@@ -43,8 +43,8 @@ A standalone Windows build. No engine install or compilation required.
 
 ## Download
 
-1. Go to the [Releases](../../releases) page.
-2. Download the latest `HoverRace.zip` 
+1. Go to the (https://github.com/AlexTreml/HoverRace/releases/tag/1.3) page.
+2. Download the latest `HoverRace_Build.zip` 
 
 ## Install & Run
 
@@ -54,12 +54,13 @@ A standalone Windows build. No engine install or compilation required.
 
 ## Controls
 
+# Keyboard
+
 | Action | Controls |
 |--------|---------|
 | Throttle / accelerate | **W** |
 | Brake / reverse | **S** |
 | Left/Right | **A** / **D** |
-| Pitch up / down | **Arrow keys** |
 | Pause | **Esc** or **P**|
 | Reset | **R** |
 
@@ -67,6 +68,25 @@ A standalone Windows build. No engine install or compilation required.
 | In Air Action | Controls |
 |--------|---------|
 | Pitch up / down | **Arrow keys** |
+| Roll left | **Q** |
+| Roll right| **E** |
+
+# Gamepad
+
+| Action | Controls |
+|--------|---------|
+| Throttle / accelerate | **RT** |
+| Brake / reverse | **LT** |
+| Left/Right | **LEFT STICK X** |
+| Pause | **MENU**|
+| Reset | **Y** |
+
+
+| In Air Action | Controls |
+|--------|---------|
+| Pitch up / down | **LEFT STICK Y** |
+| Roll left | **LB** |
+| Roll right| **RB** |
 
 Boost is automatic on contact with track-side boost pads — no input required.
 
@@ -81,8 +101,6 @@ Lower graphics options via the in-game settings menu (Pause → Settings → Gra
 **Audio not playing**
 Check Windows audio output device matches your speakers/headphones. Restart the game.
 
-**Controller not detected**
-Keyboard input is the primary supported scheme for this build.
 
 ## Build Information
 
