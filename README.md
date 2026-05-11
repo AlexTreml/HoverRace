@@ -52,9 +52,9 @@ A standalone Windows build. No engine install or compilation required.
 2. Open the extracted folder and **double-click `HoverRace.exe`**.
 3. The main menu loads. Select a level from Level selection (City or Galaxy) to begin a race.
 
-## Controls
+# Controls
 
-# Keyboard
+## Keyboard
 
 | Action | Controls |
 |--------|---------|
@@ -71,7 +71,7 @@ A standalone Windows build. No engine install or compilation required.
 | Roll left | **Q** |
 | Roll right| **E** |
 
-# Gamepad
+## Gamepad
 
 | Action | Controls |
 |--------|---------|
