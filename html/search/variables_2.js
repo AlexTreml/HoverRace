@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['checkpointgates_0',['CheckpointGates',['../class_a_race_manager.html#a01ee0e5b98d7dc36d2c71971741c7bf3',1,'ARaceManager']]],
+  ['checkpointindex_1',['CheckpointIndex',['../class_a_race_gate.html#a79009222bb09d0204e80635ae86001fd',1,'ARaceGate']]],
+  ['controlledvehicle_2',['ControlledVehicle',['../class_a_hover_vehicle_player_controller.html#ada13c37637bacf1e175790007a39524a',1,'AHoverVehiclePlayerController']]],
+  ['cornercurvaturethreshold_3',['CornerCurvatureThreshold',['../class_a_hover_a_i_racer.html#ae9158e3f48856d8e8f53e37fce7d7df2',1,'AHoverAIRacer']]],
+  ['cornerspeedmultiplier_4',['CornerSpeedMultiplier',['../class_a_hover_a_i_racer.html#ace7717857e9b8eb1d0d5cd20ef73946d',1,'AHoverAIRacer']]],
+  ['countdownduration_5',['CountdownDuration',['../class_a_race_manager.html#ab8b8f2d5495c74b3b7f9e22dd2b7218e',1,'ARaceManager']]],
+  ['countdownremaining_6',['CountdownRemaining',['../class_a_race_manager.html#ae33279f195ac20bc3bad02e4e2e1cb83',1,'ARaceManager']]],
+  ['countdowntext_7',['CountdownText',['../class_u_hover_race_u_i.html#a0d746f6b5052513558d68447aa3eb434',1,'UHoverRaceUI']]],
+  ['currentforwardspeed_8',['CurrentForwardSpeed',['../class_a_hover_vehicle_pawn.html#a5243c9e374ea1e537365c307e0089b4f',1,'AHoverVehiclePawn']]],
+  ['currenthoverheight_9',['CurrentHoverHeight',['../class_a_hover_vehicle_pawn.html#a621bd642804cc812c60fc0cc409903ae',1,'AHoverVehiclePawn']]],
+  ['currentlap_10',['CurrentLap',['../class_a_race_manager.html#a29f9752b00700b318057e345f637dc86',1,'ARaceManager']]],
+  ['currentlaptime_11',['CurrentLapTime',['../class_a_race_manager.html#a5d56772eeeaa3a4832ccb7991b3dca8f',1,'ARaceManager']]],
+  ['currentpitchspeed_12',['CurrentPitchSpeed',['../class_a_hover_vehicle_pawn.html#a7e827ca40f9fd7166c55a00b058bdc43',1,'AHoverVehiclePawn']]],
+  ['currentracetime_13',['CurrentRaceTime',['../class_a_race_manager.html#a608762666254bf0ab53a9e77bc70fd64',1,'ARaceManager']]],
+  ['currentrollspeed_14',['CurrentRollSpeed',['../class_a_hover_vehicle_pawn.html#ac07caf0086a6d22095e91c65c2e8bb53',1,'AHoverVehiclePawn']]],
+  ['currentsplinedistance_15',['CurrentSplineDistance',['../class_a_hover_a_i_racer.html#a9519c8eb6e521d6ff13e2e05cfdee93d',1,'AHoverAIRacer']]],
+  ['currentvelocity_16',['CurrentVelocity',['../class_a_hover_vehicle_pawn.html#a7520ffc36edf07a9217bd54258c12428',1,'AHoverVehiclePawn']]],
+  ['currentyawspeed_17',['CurrentYawSpeed',['../class_a_hover_vehicle_pawn.html#a5e1c2da5b3e36152360123518aa7b95c',1,'AHoverVehiclePawn']]]
+];
