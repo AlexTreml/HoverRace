@@ -202,8 +202,8 @@ void UVideoSettingsWidget::CheckIfCanChangeResolution()
 {
 	if (IsDesktopPlatform())
 	{
-		WindowModeWidget->SetVisibility(ESlateVisibility::Visible);
-		AspectRatioBox->SetVisibility(ESlateVisibility::Visible);
+		WindowModeWidget->SetVisibility(ESlateVisibility::Collapsed);
+		AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 		WindowResolutionBox->SetVisibility(ESlateVisibility::Visible);
 	}
 	else
@@ -212,6 +212,11 @@ void UVideoSettingsWidget::CheckIfCanChangeResolution()
 		AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 		WindowResolutionBox->SetVisibility(ESlateVisibility::Collapsed);
 	}
+	if (LockFPSWidget) LockFPSWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRStatusWidget) HDRStatusWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRDisplayProfileWidget) HDRDisplayProfileWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRColorSpaceWidget) HDRColorSpaceWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (ResetButton) ResetButton->SetVisibility(ESlateVisibility::Collapsed);
 }
 
 void UVideoSettingsWidget::SetUpBrightnessValue(float Value)
@@ -367,17 +372,22 @@ void UVideoSettingsWidget::LoadSettings()
 		WindowModeWidget->UpdateTextBlock();
 		WindowModeWidget->UpdateValueName();
 
-		//If Bordeless hide resolution and aspect ratio
+		//Aspect ratio and window mode always hidden in this build; resolution hidden in Borderless only
+		AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 		if (WindowModeWidget->Value == 1)
 		{
-			AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 			WindowResolutionBox->SetVisibility(ESlateVisibility::Collapsed);
 		}
 		else
 		{
-			AspectRatioBox->SetVisibility(ESlateVisibility::Visible);
 			WindowResolutionBox->SetVisibility(ESlateVisibility::Visible);
 		}
+		if (WindowModeWidget) WindowModeWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (LockFPSWidget) LockFPSWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRStatusWidget) HDRStatusWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRDisplayProfileWidget) HDRDisplayProfileWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRColorSpaceWidget) HDRColorSpaceWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (ResetButton) ResetButton->SetVisibility(ESlateVisibility::Collapsed);
 
 		if (IsDesktopPlatform())
 		{
@@ -633,16 +643,21 @@ void UVideoSettingsWidget::OnWindowModeChanged(int Value)
 		break;
 	}
 
+	AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 	if (Value == 1)
 	{
-		AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 		WindowResolutionBox->SetVisibility(ESlateVisibility::Collapsed);
 	}
 	else
 	{
-		AspectRatioBox->SetVisibility(ESlateVisibility::Visible);
 		WindowResolutionBox->SetVisibility(ESlateVisibility::Visible);
 	}
+	if (WindowModeWidget) WindowModeWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (LockFPSWidget) LockFPSWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRStatusWidget) HDRStatusWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRDisplayProfileWidget) HDRDisplayProfileWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (HDRColorSpaceWidget) HDRColorSpaceWidget->SetVisibility(ESlateVisibility::Collapsed);
+	if (ResetButton) ResetButton->SetVisibility(ESlateVisibility::Collapsed);
 
 	if (bInstantApply)
 	{
@@ -792,17 +807,22 @@ void UVideoSettingsWidget::ResetSettings()
 		WindowModeWidget->UpdateTextBlock();
 		WindowModeWidget->UpdateValueName();
 
-		//If Bordeless hide resolution and aspect ratio
+		//Aspect ratio and window mode always hidden in this build; resolution hidden in Borderless only
+		AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 		if (WindowModeWidget->Value == 1)
 		{
-			AspectRatioBox->SetVisibility(ESlateVisibility::Collapsed);
 			WindowResolutionBox->SetVisibility(ESlateVisibility::Collapsed);
 		}
 		else
 		{
-			AspectRatioBox->SetVisibility(ESlateVisibility::Visible);
 			WindowResolutionBox->SetVisibility(ESlateVisibility::Visible);
 		}
+		if (WindowModeWidget) WindowModeWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (LockFPSWidget) LockFPSWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRStatusWidget) HDRStatusWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRDisplayProfileWidget) HDRDisplayProfileWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (HDRColorSpaceWidget) HDRColorSpaceWidget->SetVisibility(ESlateVisibility::Collapsed);
+		if (ResetButton) ResetButton->SetVisibility(ESlateVisibility::Collapsed);
 
 		if (IsDesktopPlatform())
 		{

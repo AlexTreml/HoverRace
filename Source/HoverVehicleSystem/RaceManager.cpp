@@ -544,6 +544,11 @@ void ARaceManager::BuildFinalResults()
     for (int32 i = 0; i < FinalResults.Num(); ++i)
     {
         FinalResults[i].Position = i + 1;
+        if (FinalResults[i].bIsPlayer)
+        {
+            // Sync live tracker so HoverRaceUI FinishPositionText shows the true final position
+            CurrentPlayerPosition = FinalResults[i].Position;
+        }
     }
 }
 
