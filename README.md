@@ -6,10 +6,11 @@ Anti-gravity racing game built in Unreal Engine 5.6
 
 | Document | Location |
 |----------|----------|
-| **Development Commentary** | Submitted as HoverRace.html and available via GitHub Pages on link provided in submission)|
-| **Playable Windows Build** | (https://github.com/AlexTreml/HoverRace/releases/tag/1.3) |
+| **Development Commentary** | Submitted as self contained html and also available via GitHub Pages on link provided in submission|
+| **Playable Windows Build** | https://github.com/AlexTreml/HoverRace/releases/tag/1.3 |
 | **Video Talk** | You Tube Link available in Development commentary submission |
-| **Unreal Files**| Available in this repository.
+| **Unreal Files and source C++ files**| Available in this repository.|
+| **C++ API Documentaion**|  https://alextreml.github.io/HoverRace/html/index.html|
 
 ## Project Structure
 
@@ -18,6 +19,7 @@ HoverVehicleSystem/
   Content/              — Blueprints, maps, materials, UI widgets
   Config/               — Project configuration
   Source/               — C++ source code
+  Html/                 — Doxygen C++ Files
     HoverVehicleSystem/
       RaceManager.h/.cpp
       HoverAIRacer.h/.cpp
@@ -88,7 +90,7 @@ A standalone Windows build. No engine install or compilation required.
 | Roll left | **LB** |
 | Roll right| **RB** |
 
-Boost is automatic on contact with track-side boost pads — no input required.
+
 
 ## Troubleshooting
 
