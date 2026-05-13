@@ -90,7 +90,7 @@ A standalone Windows build. No engine install or compilation required.
 | Roll left | **LB** |
 | Roll right| **RB** |
 
-Boost is automatic on contact with track-side boost pads — no input required.
+
 
 ## Troubleshooting
 
