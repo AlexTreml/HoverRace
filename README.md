@@ -6,7 +6,7 @@ Anti-gravity racing game built in Unreal Engine 5.6
 
 | Document | Location |
 |----------|----------|
-| **Development Commentary** | Submitted as self contained html and available via GitHub Pages on link provided in submission|
+| **Development Commentary** | Submitted as self contained html and also available via GitHub Pages on link provided in submission|
 | **Playable Windows Build** | https://github.com/AlexTreml/HoverRace/releases/tag/1.3 |
 | **Video Talk** | You Tube Link available in Development commentary submission |
 | **Unreal Files and source C++ files**| Available in this repository.|
