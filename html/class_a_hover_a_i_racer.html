@@ -28,7 +28,6 @@
   <td id="projectalign">
    <div id="projectname">HoverRace<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">C++ source documentation for HoverRace</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +92,9 @@ $(function(){initNavTree('class_a_hover_a_i_racer.html','','class_a_hover_a_i_ra
 </div><!--header-->
 <div class="contents">
 
+<p>AI racer pawn that follows a HoverRaceSpline around the track.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_hover_a_i_racer_8h_source.html">HoverAIRacer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AHoverAIRacer:</div>
@@ -115,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b4d772cb5e5b0ffe0151899d044de10" id="r_a1b4d772cb5e5b0ffe0151899d044de10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4d772cb5e5b0ffe0151899d044de10">StopRacing</a> ()</td></tr>
 <tr class="memdesc:a1b4d772cb5e5b0ffe0151899d044de10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt movement and zero the current speed.  <br /></td></tr>
 <tr class="memitem:a49aa7d85160d19ba73155ff593f25602" id="r_a49aa7d85160d19ba73155ff593f25602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49aa7d85160d19ba73155ff593f25602">ApplyBoostPad</a> (float BoostStrength)</td></tr>
-<tr class="memdesc:a49aa7d85160d19ba73155ff593f25602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a timed boost. Called by <a class="el" href="class_a_boost_pad.html">ABoostPad</a> on overlap.  <br /></td></tr>
+<tr class="memdesc:a49aa7d85160d19ba73155ff593f25602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a timed boost. Called by <a class="el" href="class_a_boost_pad.html" title="Trigger actor that applies a temporary speed boost to overlapping racers.">ABoostPad</a> on overlap.  <br /></td></tr>
 <tr class="memitem:a79cef35ed8aee307f1790152dd862783" id="r_a79cef35ed8aee307f1790152dd862783"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79cef35ed8aee307f1790152dd862783">GetCurrentSpeed</a> () const</td></tr>
 <tr class="memitem:aecce2676396183516950a9df6a6bf4d9" id="r_aecce2676396183516950a9df6a6bf4d9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecce2676396183516950a9df6a6bf4d9">GetRaceProgress</a> () const</td></tr>
 <tr class="memdesc:aecce2676396183516950a9df6a6bf4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current spline distance as a 0–1 fraction of total length.  <br /></td></tr>
@@ -157,14 +159,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aaa0119da3e85422745d63c3a57b52f79" id="r_aaa0119da3e85422745d63c3a57b52f79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa0119da3e85422745d63c3a57b52f79">bShowDebugInfo</a> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>AI Racer that follows a HoverRaceSpline around the track.</p>
-<p>Setup:</p><ol type="1">
-<li>Place HoverAIRacer in your level near the start</li>
-<li>Assign a Static Mesh to give it a visual appearance</li>
-<li>Make sure HoverRaceSpline exists in the level</li>
-<li>Adjust speed and difficulty settings</li>
-<li>Press Play - the AI will race automatically! </li>
-</ol>
+<div class="textblock"><p>AI racer pawn that follows a HoverRaceSpline around the track. </p>
+<p>Instances are placed in the level at the start grid and reference a HoverRaceSpline actor for their racing line. Per-instance properties (BaseSpeed, StraightSpeedMultiplier, CornerSpeedMultiplier, LateralOffset) control speed and lane offset; the AI begins racing automatically when the RaceManager transitions to <a class="el" href="_race_manager_8h.html#a07e29c7568f14f7f225ea1ccf55ed455acccb415e6e81d3303a19fdf10e6c68b8">ERaceState::Racing</a>. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a92a3db35b9f8554aabc31699aa053a23" name="a92a3db35b9f8554aabc31699aa053a23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92a3db35b9f8554aabc31699aa053a23">&#9670;&#160;</a></span>AHoverAIRacer()</h2>
@@ -201,7 +197,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Activate a timed boost. Called by <a class="el" href="class_a_boost_pad.html">ABoostPad</a> on overlap. </p>
+<p>Activate a timed boost. Called by <a class="el" href="class_a_boost_pad.html" title="Trigger actor that applies a temporary speed boost to overlapping racers.">ABoostPad</a> on overlap. </p>
 
 </div>
 </div>

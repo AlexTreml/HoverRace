@@ -28,7 +28,6 @@
   <td id="projectalign">
    <div id="projectname">HoverRace<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">C++ source documentation for HoverRace</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +92,9 @@ $(function(){initNavTree('class_a_respawn_volume.html','','class_a_respawn_volum
 </div><!--header-->
 <div class="contents">
 
+<p>Trigger volume that returns an overlapping pawn to the last checkpoint (or start gate) via RaceManager::ResetVehiclePosition.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_respawn_volume_8h_source.html">RespawnVolume.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ARespawnVolume:</div>
@@ -118,7 +120,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aacf0e7a0e0d5adb82698a793b728b608" id="r_aacf0e7a0e0d5adb82698a793b728b608"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf0e7a0e0d5adb82698a793b728b608">bShowDebugMessage</a> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Trigger volume that respawns the vehicle when entered. Place these around track edges where players can fall off. </p>
+<div class="textblock"><p>Trigger volume that returns an overlapping pawn to the last checkpoint (or start gate) via RaceManager::ResetVehiclePosition. </p>
+<p>Positioned below or beside the track to catch off-route falls. The volume itself holds no respawn data; it delegates to the RaceManager which owns the most recent checkpoint state. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1e70e0b4160634f0dd4f54ee1925e043" name="a1e70e0b4160634f0dd4f54ee1925e043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e70e0b4160634f0dd4f54ee1925e043">&#9670;&#160;</a></span>ARespawnVolume()</h2>

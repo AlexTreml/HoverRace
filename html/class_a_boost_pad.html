@@ -28,7 +28,6 @@
   <td id="projectalign">
    <div id="projectname">HoverRace<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">C++ source documentation for HoverRace</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +92,9 @@ $(function(){initNavTree('class_a_boost_pad.html','','class_a_boost_pad-members'
 </div><!--header-->
 <div class="contents">
 
+<p>Trigger actor that applies a temporary speed boost to overlapping racers.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_boost_pad_8h_source.html">BoostPad.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ABoostPad:</div>
@@ -124,7 +126,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a62f9109ed5a16faf3b7bcafcb087aebf" id="r_a62f9109ed5a16faf3b7bcafcb087aebf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f9109ed5a16faf3b7bcafcb087aebf">bShowDebugMessage</a> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Boost pad that increases vehicle speed when driven over. Place these on your race track for speed boosts. </p>
+<div class="textblock"><p>Trigger actor that applies a temporary speed boost to overlapping racers. </p>
+<p>Configurable per-instance for boost magnitude, duration, and cooldown. Affects both the player pawn and AI racers via the same overlap handler. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e1986f174ae2eb086ec8ff5ebedae87" name="a4e1986f174ae2eb086ec8ff5ebedae87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e1986f174ae2eb086ec8ff5ebedae87">&#9670;&#160;</a></span>ABoostPad()</h2>
